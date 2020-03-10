@@ -1,0 +1,87 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: Home
+  order: 1
+---
+
+<section class="hero home_1" style="">
+	<div class="container large">
+
+		<div class="main">
+			<div class="copy">
+				<div class="title">
+					<h1>The <span>Past</span> is <span>Alive</span></h1>
+				</div>
+				<div class="caption">
+					<p>Necro Cult is an effort to recreate the look and feel of 80s and 90s underground metal zines, in the tradition, and in tribute of Slayer Mag, Helvete, and countless other fanzines created throughout the decades.  We aim not just to showcase the art, culture, and news of the metal underground, but to have the reader’s experience be a work of art as well.  </p>
+					
+					<p>Brothers of Steel!  Death to False Metal!</p>
+				</div>
+			</div>
+
+			<div class="">
+				
+			</div>
+		</div>
+
+		<div class="home_hero_slider">
+			<h2>featured</h2>
+
+			{% set postslist = collections.featured %}
+			{% set postslistCounter = collections.featured | length %}
+			{% include "featured_slider.njk" %}
+
+		</div>
+
+	</div>
+</section>
+
+
+<section>
+
+	<div class="container large home_2 clearfix">
+
+	<div class="article_preview_feed">
+		<div class="header">
+			<h2>Recent Articles</h2>
+		</div>
+
+		{% set postslist = collections.posts %}
+		{% set postslistCounter = collections.posts | length %}
+		{% include "postslist.njk" %}
+
+		<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+
+
+	</div>
+
+
+	<div class="sidebar ">
+
+
+		<div class="sticky_sidebar">
+			
+			<div class="sidebar_cell form">
+				<form id="newsletter_form">
+					<h3>newsletter</h3>
+					<input type="text" name="email" placeholder="email">
+					<button type="submit" form="newsletter_form">Join Us</button>
+				</form>
+			</div>
+
+			<div class="sidebar_cell sponsor" >
+				<h3>sponsors</h3>
+				<a href="https://judasbeastco.com" target="_blank">
+				<img src="/img/sidebar/judas-beast-ad.jpg" alt="Judas Beast - Clothes for Metalheads and Metal Pets">
+				</a>
+			</div>
+
+		</div>   
+
+
+	</div>
+
+
+	</div>
+</section>

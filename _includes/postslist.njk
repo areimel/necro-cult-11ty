@@ -1,0 +1,45 @@
+<ul reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+
+  {% for post in postslist | reverse %}
+
+    <li class="article_preview_wrapper postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+      
+      <article id="" class="article article_preview animate_in" itemscope itemprop="blogPost">
+
+        <div class="copy cut_paste">
+
+          <div class="article-inner">
+
+
+            <div class="article-header title inner">
+              <!--<%- partial('post/title', {class_name: 'article-title'}) %>-->
+              <a class="article-title" href="{{ post.url | url }}#more">{{ post.data.headline }}</a>
+            </div>
+
+
+            <div class=" snippet inner" itemprop="articleBody">
+              <p>{{ post.data.snippet}}</p>
+
+              <a class="read_more" href="{{ post.url | url }}#more">
+                Read More
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="image">
+          <a href="{{ post.url | url }}#more">
+            <img class="" src="{{ post.data.image | url }}" alt="{{ post.data.album_credit}}" />
+          </a>
+          <span class="image_credit">{{ post.data.album_credit}}</span>
+        </div>
+
+      </article>
+
+    </li>
+
+  {% endfor %}
+
+</ul>

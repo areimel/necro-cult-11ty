@@ -1,0 +1,77 @@
+/***************
+****************
+RESOURCES
+
+FONTS
+  font-family: 'OldEnglish', cursive;
+  font-family: 'Germania One', cursive;
+  font-family: 'Source Code Pro', monospace;
+  font-family: 'Spectral', serif;
+
+
+COLORS
+  BLACK: #000;
+  WHITE: #fff;
+  RED: #fb3333;
+
+Z-INDEX
+  0-99:       General elements;
+  100-999:    Nav and other globals;
+  1000-9999:  Special cases;
+  
+VARIABLES
+  attribute: var(--variable);
+  
+FULL WIDTH
+  2560px
+
+
+****************
+***************/
+
+:root {
+  
+  font-size: 10px;
+
+  --black: #1a1a1a;
+  --white: #fdfdfd;
+  --red: #fb0000;
+  --grey-3: #333;
+  --grey-6: #666;
+
+  --old-english: 'OldEnglish', cursive;
+  --germania: 'Germania One', cursive;
+  --mono: 'Source Code Pro', monospace;
+  --serif: 'Spectral', serif;
+  
+  --short-transition: .25s ease-in-out;
+  --medium-transition: .5s ease-in-out;
+  --long-transition: .75 ease-in-out;
+  
+  --shadow-1: 
+    0 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    0 12.5px 10px rgba(0, 0, 0, 0.035),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    0 100px 80px rgba(0, 0, 0, 0.07);
+  
+  --text-shadow-red:
+    1px 1px var(--red), 
+    2px 2px var(--red), 
+    3px 3px var(--red), 
+    4px 4px var(--red), 
+    5px 5px var(--red);
+    
+  --text-glow-red:
+    0 0 1vw var(--red), 
+    0 0 3vw var(--red), 
+    0 0 10vw var(--red), 
+    0 0 10vw var(--red), 
+    0 0 .4vw var(--red), 
+    .5vw .5vw .1vw #806914;
+  
+  
+  
+}
+

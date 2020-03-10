@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/variables.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/boilerplate.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/kvlt-framework.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/responsive.css' | url }}">
+
+    <!-- INVOCATION OF CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" integrity="sha256-pH1rXnKT93pKrqWn3yDTgwsQrK/M4sVMFL774/pfaas=" crossorigin="anonymous" />
+
+
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Spectral|Germania+One');
+
+      @font-face {
+        font-family: 'OldEnglish';
+        src: url("{{ '/css/fonts/OldeEnglish.ttf' | url }}") format('truetype');
+
+      }
+    </style>
+
+    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  </head>
+  <body>
+
+    
+    <div id="grain_filter"></div>
+   
+    <!-- SIDEBAR NAV -->
+
+    <div id="nav_overlay"></div>
+  
+    <nav id="nav">
+      <div class="main">
+        <a class="menu_button">
+          <i class="fas fa-times"></i>
+        </a>
+
+        <a id="fullscreen_button">
+          <i class="fas fa-expand open"></i>
+          <i class="fas fa-compress close"></i>
+        </a>
+
+        <a href="/" class="logo">Necro <br>Cult</a>
+        <span id=nav_tagline></span>
+        
+      </div>
+      <div class="links">
+        <a href="#">
+          <i class="fas fa-cross"></i>
+          Full Issues
+          <i class="fas fa-cross"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-cross"></i>
+          Reviews
+          <i class="fas fa-cross"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-cross"></i>
+          News
+          <i class="fas fa-cross"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-cross"></i>
+          Blog
+          <i class="fas fa-cross"></i>
+        </a>
+        <a href="#">
+          <i class="fas fa-cross"></i>
+          Dev
+          <i class="fas fa-cross"></i>
+        </a>
+      </div>
+      
+    </nav>
+
+
+
+    <div class="body_wrapper">
+      <div id="wrap">
+
+        <div data-scroll>
+          <div data-scroll-content>
+
+            <div class="outer">
+      
+              <header id=header>
+
+                <div class="left">
+                  <a class="menu_button">
+                    <i class="fas fa-bars"></i>
+                  </a>
+                  <a href="/" class="logo">Necro Cult</a>
+                </div>
+
+                <div class="right">
+                  <div class="social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-codepen"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                  </div>
+                </div>
+                
+              </header>
+
+              <section id="main">{{ content | safe }}</section>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+
+  
+  <!-- JS Resources -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/js/jquery.tooltipster.min.js" integrity="sha256-lenj6loHcdfu6tFQPUHN6S2O7G2gv7yX/P9OnRc8lno=" crossorigin="anonymous"></script>
+
+
+  <!-- Scroll Magic -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js" integrity="sha256-+9YNuItWuR4sbqeaNiJOxG0BvptYz4fbUXbIZoH5Jwo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js" integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/jquery.ScrollMagic.min.js" integrity="sha256-vMplzCSo+pO4wcmz/as8FVtabF5gE9Gwqk5ER8jux3w=" crossorigin="anonymous"></script>
+    
+  <!-- Local Scripts -->
+    <script src="{{ '/js/script.js' | url }}"></script>
+
+</html>

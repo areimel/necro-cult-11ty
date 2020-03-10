@@ -1,0 +1,15 @@
+{
+  "title": "Necro Cult",
+  "url": "https://necrocultzine.com/",
+  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "feed": {
+    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://myurl.com/"
+  },
+  "author": {
+    "name": "Alec Reimel",
+    "email": "necrocultzine@gmail.com"
+  }
+}

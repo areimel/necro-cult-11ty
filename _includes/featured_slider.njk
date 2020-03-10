@@ -1,0 +1,33 @@
+
+  
+  <div class="swiper-wrapper">
+    
+    {% for post in postslist | reverse %}      
+    
+      <div class="swiper-slide">
+
+         <article class="cut_paste">
+           
+           <a href="{{ post.url | url }}#more" class="image">
+             <img src="{{ post.data.image | url }}">
+           </a>
+
+           <div class="copy ">
+             <a href="{{ post.url | url }}#more" class="title inner">
+               <h1 class="">{{ post.data.headline }}</h1>
+             </a>
+           </div>
+           
+         </article>
+
+       </div>
+
+          
+    {% endfor %}
+  
+  </div>
+
+  <div class="swiper-pagination"></div>
+
+
+  
