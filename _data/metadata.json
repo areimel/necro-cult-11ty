@@ -1,12 +1,12 @@
 {
   "title": "Necro Cult",
   "url": "https://necrocultzine.com/",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Music, News, and Culture from the heavy metal underground.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Music, News, and Culture from the heavy metal underground.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "id": "https://necrocultzine.com/"
   },
   "author": {
     "name": "Alec Reimel",
