@@ -342,7 +342,11 @@ ELEMENTS
     }
 
 
-  /***** ARTICLE PREVIEW *****/
+  /********************************************
+
+  ARTICLE PREVIEW 
+
+  ********************************************/
     .postlist{
       list-style: none;
     }
@@ -368,7 +372,7 @@ ELEMENTS
       background-position: center;
     }
 
-    .article_preview_wrapper:nth-of-type(odd) .article_preview{
+    .article_preview.left{
       flex-direction: row;
     }
 
@@ -396,14 +400,14 @@ ELEMENTS
         transform:none;
         transition:.5s;
       }
-      .article_preview_wrapper:nth-of-type(odd) .article_preview>.image>a>img{
+      .article_preview.left>.image>a>img{
         transform-origin:right;
         perspective-origin:left;
         transform:none;
         transition:.5s;
         will-change: transform, filter, box-shadow;
       }
-      .article_preview_wrapper:nth-of-type(odd) .article_preview>.image:hover>a>img{
+      .article_preview.left>.image:hover>a>img{
         filter: grayscale(1);
         transform: translateX( -100px ) translateY( 5px ) translateZ(50px) rotateX( -15deg ) rotateY( -25deg ) scale(.75);
         box-shadow:5px -5px 15px 15px rgba(255,255,255,0.25);
@@ -421,7 +425,7 @@ ELEMENTS
       .article_preview>div.image{
         padding-right:15px;
       }
-      .article_preview_wrapper:nth-of-type(odd) .article_preview>div.image{
+      .article_preview.left>div.image{
         padding-left:15px;
       }
 
@@ -444,7 +448,7 @@ ELEMENTS
         z-index: 12;
         box-sizing: border-box;
       }
-      .article_preview_wrapper:nth-of-type(odd) .article_preview>div.copy{
+      .article_preview.left>div.copy{
         padding-right:50px;
       }
       .article_preview>div.copy{
@@ -467,6 +471,15 @@ ELEMENTS
         transition-timing-function: ease-in-out;
         will-change: text-shadow;
       }
+
+      .article_preview>.copy.cut_paste .title{
+        box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
+        margin-bottom: 0;
+        top: 10px;
+        left: -15px;
+        transform: rotate(4deg);
+      }
+
       .article_preview>.copy .title a{
         transition: .25s ease-in-out;
       }
@@ -485,7 +498,7 @@ ELEMENTS
       .article_preview>.copy .snippet{
         font-size:1.8rem;
         line-height: 2.4rem;
-        padding: 10px 25px 25px 25px;
+        padding: 25px 25px 25px 25px;
         box-sizing: border-box;
         z-index: 14;
         background var(--white)
@@ -517,38 +530,31 @@ ELEMENTS
         
       }
 
+
+
     /***** Special Classes *****/
-    
-      .article_preview>.copy.cut_paste .title{
-        box-shadow: 3px 3px 3px rgba(0,0,0,0.25);
-        margin-bottom: 0;
-        top: 20px;
-        left: -15px;
-        transform: rotate(4deg);
-      }
-      .article_preview>div.copy.cut_paste:last-of-type .title{
-        transform: rotate(-3deg);
-        top:10px;
-      }
-      .article_preview>div.copy.cut_paste:last-of-type .title>h3{
-        transform: rotate(2deg);
-      }
-        
-
-      .article_preview>.copy.cut_paste .snippet{
-        padding: 25px 25px 10px 25px;
-      }
-
-      .article_preview>div.copy.cut_paste:first-of-type .snippet{
-        padding-right:35px;
-      }
-      .article_preview>div.copy.cut_paste:last-of-type .snippet{
-        padding-left:35px;
-        transform: rotate(1deg);
-      }
-      .article_preview>div.copy.cut_paste:last-of-type .snippet>p{
-        transform: rotate(-2deg);
-      }
+      
+      /***** Left *****/
+        .article_preview.left>div.copy.cut_paste .title{
+          transform: rotate(-3deg);
+          top:10px;
+        }
+        .article_preview.left>div.copy.cut_paste .title>h3{
+          transform: rotate(2deg);
+        }
+        .article_preview.right>div.copy.cut_paste .snippet{
+          padding-right:35px;
+        }
+        .article_preview.left>div.copy.cut_paste .snippet{
+          padding-left:35px;
+          transform: rotate(1deg);
+        }
+          
+      
+      /***** Right *****/      
+        .article_preview.left>div.copy.cut_paste .snippet>p{
+          transform: rotate(-3deg);
+        }
 
 
 
