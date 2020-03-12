@@ -55,13 +55,29 @@ PAGES
         box-sizing: border-box;
         padding: 0px 35px 15px;
       }
+    
       .home_1>.container>.home_hero_slider h2 {
         margin-bottom: 35px;
         padding-bottom: 15px;
-        border-bottom: 1px solid var(--white);
+        /*border-bottom: 1px solid var(--white);*/
         text-align: center;
         font-size: 6.5rem;
+        position: relative;
       }
+      .home_1>.container>.home_hero_slider h2:after {
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        height: 50px;
+        width: 75%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-image: url("/img/barbed-border-trans.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
       .home_1>.container>.home_hero_slider .swiper-pagination {
         display: flex;
         justify-content: center;
