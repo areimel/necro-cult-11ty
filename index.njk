@@ -28,8 +28,7 @@ eleventyNavigation:
 		<div class="home_hero_slider">
 			<h2>featured</h2>
 
-			{% set postslist = collections.featured %}
-			{% set postslistCounter = collections.featured | length %}
+			{% set postslist = collections.featured.slice(0, 3) %}
 			{% include "featured_slider.njk" %}
 
 		</div>
@@ -47,8 +46,7 @@ eleventyNavigation:
 			<h2>Recent Articles</h2>
 		</div>
 
-		{% set postslist = collections.posts %}
-		{% set postslistCounter = collections.posts | length %}
+		{% set postslist = collections.posts.slice(0, 3) %}
 		{% include "postslist.njk" %}
 
 		<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
