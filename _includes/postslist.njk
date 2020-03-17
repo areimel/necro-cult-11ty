@@ -1,12 +1,20 @@
 <ul reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
   
-  {% set cls = cycler("left", "right") %}
+  {% set cls = cycler("", "alt_1") %}
 
   {% for post in postslist | reverse %}
 
     <li class="article_preview_wrapper postlist-item">
       
       <article id="" class="article article_preview animate_in {{ cls.next() }}" itemscope itemprop="blogPost">
+
+        <div class="image">
+          <a href="{{ post.url | url }}#more">
+            <img class="" src="{{ post.data.image | url }}" alt="{{ post.data.album_credit}}" />
+          </a>
+          <span class="image_credit">{{ post.data.album_credit}}</span>
+        </div>
+        
 
         <div class="copy cut_paste">
 
@@ -29,13 +37,6 @@
 
           </div>
 
-        </div>
-
-        <div class="image">
-          <a href="{{ post.url | url }}#more">
-            <img class="" src="{{ post.data.image | url }}" alt="{{ post.data.album_credit}}" />
-          </a>
-          <span class="image_credit">{{ post.data.album_credit}}</span>
         </div>
 
       </article>

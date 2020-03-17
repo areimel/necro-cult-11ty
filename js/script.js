@@ -158,7 +158,7 @@ $(document).ready(function(){
         function type(element) {
         
             function randomOpacity() {
-                return (Math.floor(Math.random() * 50) + 50)/100;
+                return (Math.floor(Math.random() * 80) + 70)/100;
             }
             function randomEms() {
               if (Math.random() > .8) {
