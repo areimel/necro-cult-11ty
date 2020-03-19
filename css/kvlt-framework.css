@@ -72,7 +72,7 @@ GENERAL
       background-color:var(--grey-3);
       color:var(--white);
       font-size:1.6rem;
-
+      letter-spacing: 0.0625em;
     }
 
     html {
@@ -110,6 +110,20 @@ GENERAL
       max-width:100%;
     }
 
+
+    /***** Mobile Flex Direction *****/
+
+      @media all and (max-width: 1000px) {
+        [mobile-flex]>*{
+          width: 100% !important;
+        }
+        [mobile-flex="column"]{
+          flex-direction: column !important;
+        }
+        [mobile-flex="column-reverse"]{
+          flex-direction: column-reverse !important;
+        }
+      }
 
 
 
@@ -376,10 +390,10 @@ HEADER/FOOTER/NAV
       pointer-events: none;
     }
     
-
-    #main>*:first-child{
-      padding-top: 100px;
-    }
+    /***** Push first child down to account for header nav *****/
+      #main>*:first-child{
+        padding-top: 80px;
+      }
 
 
 
@@ -389,7 +403,7 @@ HEADER/FOOTER/NAV
       width:100%;
       max-width:1440px;
       box-sizing:border-box;
-      padding: 15px 35px;
+      padding: 15px 50px;
       margin:auto;
       
     }
@@ -650,6 +664,35 @@ ELEMENTS
         transform: rotate(-1deg);
         text-decoration: none;
       }
+
+
+/********************************************
+
+TYPOGRAPHY
+
+********************************************/
+
+  .first_letter:first-letter{
+    font-family: var(--old-english);
+    font-size: 3.5em;
+    line-height: 1.8em;
+    letter-spacing: .3rem;
+    float:left;
+  }
+
+  .cut_out{
+    background-color: var(--white);
+    color: var(--black);
+    font-family: var(--mono);
+    display: inline;
+    letter-spacing: 1px;
+    padding: 1px 0;
+    box-shadow: 
+      10px 0 0 var(--white), 
+      -10px 0 0 var(--white)
+    ;
+  }
+
 
 /********************************************
 

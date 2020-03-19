@@ -294,92 +294,118 @@ PAGES
 
 
 
+/********************************************
 
-  /***** ARTICLE *****/
-  .article.tales.section_1 {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    box-sizing: border-box;
-  
-  }
-  .article.tales.section_1 .hero {
-    width: 100%;
-    background-size: cover;
+ARTICLES - GENERAL
+
+********************************************/
+
+  .article_hero{
+    min-height: 400px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 50px 0;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
   }
-  .article.tales.section_1 .hero h1 {
+  .article_hero .title{
     text-align: center;
+    font-size: 7.2rem;
+  }
+  .article_hero .title>.column_name{
     color: var(--black);
     background-color: var(--white);
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: rotate(-8deg);
+    display: inline-block;
+    padding:5px 15px;
+    transform: rotate(-2deg);
+    margin-bottom: 35px;
   }
-  .article.tales.section_1 .hero h1 .title {
-    transform: rotate(2deg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 35px;
-  }
-  .article.tales.section_1 .hero h1 .title >span:nth-of-type(1) {
-    font-size: 8rem;
-    line-height: 8rem;
-    display: block;
-    position: relative;
-    bottom: -10px;
-  }
-  .article.tales.section_1 .hero h1 .title >span:nth-of-type(2) {
-    font-size: 3.5rem;
-    display: block;
-  }
-  .article.tales.section_1 .hero h1 .title >span:nth-of-type(3) {
-    font-size: 10rem;
-    line-height: 8rem;
-    display: block;
-    position: relative;
-    top: -20px;
-  }
-  .article.tales.section_1 .hero .band {
-    color: var(--red);
-    font-size: 10rem;
-    display: block;
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    padding-top: 100px;
-  }
-  
-
-  .article.tales .copy {
-    padding-left: 100px;
-    font-size: 2.2rem;
-  }
-  .article.tales .copy:first-letter {
-    font-family: var(--old-english);
-    font-size: 7.2rem;
-    margin-left: 25px;
-    margin-right: 5px;
-  }
-  .article.tales .split{
-    display: flex;
-  }
-  .article.tales .split>.image{
-    width: 400px;
-  }
-  
-  .article.tales .split .image .duotone-img-wrapper{
-
+  .article_hero .title>.main{
+    color: var(--white);
+    font-size: 15rem;
   }
 
 
-  .article.tales .split>.copy{
-    width: calc(100% - 400px);
-  }
+  /***** Image Credit *****/
+    .article_hero>.image_credit{
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      font-family: var(--mono);
+      font-size: 1rem;
+    }
+
+
+  /*************************/
+  /***** Body Sections *****/
+  /*************************/
+    .article_section{
+      display: flex;
+    }
+    .article_section.column{
+      flex-direction: column;
+    }
+
+    /***** Copy *****/
+      .article_section .copy{
+        font-size: 1.8rem; 
+        line-height: 1.35em;
+        width:calc(100% - 600px);
+        padding: 35px;
+        padding-left: 0px;
+        padding-right: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .article_section .copy>.inner{
+        width: 100%;
+        max-width: 500px;
+      }
+
+      .article_section .copy p{
+        margin-bottom: 35px;
+        text-indent: 1.5em;
+      }
+
+    /***** Image *****/
+      .article_section .image{
+        width:600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    /************************/
+    /***** Alt Versions *****/
+    /************************/
+
+        /***** Reverse *****/
+          .article_section.row_reverse{
+            flex-direction: row-reverse;
+          }
+          .article_section .copy{
+            padding-left: 50px;
+            padding-right: 0px;
+          }
+
+
+  /*******************/
+  /***** Spacers *****/
+  /*******************/
+
+    .article_spacer{
+      max-width: 800px;
+      width: 100%;
+      margin: 65px auto;
+      padding: 0 35px;
+    }
+    .article_spacer.small{
+      
+      margin: 15px auto;
+      
+    }

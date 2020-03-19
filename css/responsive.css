@@ -1,0 +1,13 @@
+
+
+
+@media all and (max-width: 1000px) {
+  .container{
+	padding: 15px 35px;
+  }
+}
+@media all and (max-width: 400px) {
+  .container{
+	padding: 15px 15px;
+  }
+}

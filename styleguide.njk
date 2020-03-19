@@ -7,33 +7,80 @@ eleventyNavigation:
 ---
 
 
-<section class="hero home_1" style="">
-	<div class="container large">
+<article>
+	
+	<!-- HERO/TITLE -->
+	<section class="article_hero container" style="background-image: url('/img/articles/morbid/evil-dead-1.jpg');">
 
-		<div class="main">
-			<div class="copy">
-				<div class="title">
-					<h1>The <span>Past</span> is <span>Alive</span></h1>
-				</div>
-				<div class="caption">
-					<p>Necro Cult is an effort to recreate the look and feel of 80s and 90s underground metal zines, in the tradition, and in tribute of Slayer Mag, Helvete, and countless other fanzines created throughout the decades.  We aim not just to showcase the art, culture, and news of the metal underground, but to have the reader’s experience be a work of art as well.  </p>
-					
-					<p>Brothers of Steel!  Death to False Metal!</p>
-				</div>
-			</div>
-
-			<div class="">
-				
-			</div>
+		<div class="copy">
+			<h1 class="title">
+				<span class="column_name">Tales From The Basement:</span>
+				<br>
+				<span class="main">Morbid</span>
+			</h1>
 		</div>
+		
 
-		<div class="home_hero_slider">
-			<h2>featured</h2>
-
-			{% set postslist = collections.featured.slice(0, 3) %}
-			{% include "featured_slider.njk" %}
-
-		</div>
-
+		<span class="image_credit">
+			CREDIT: The Evil Dead, 1981
+		</span>
+	</section>
+	
+	<!-- INTRO -->
+	<div class="article_spacer">
+		<img src="/img/barbed-wire-border-trans-large.png">
 	</div>
-</section>
+
+	<!-- INTRO -->
+	<section class="article_section container" mobile-flex="column">
+
+		<div class="copy">
+			<div class="inner">
+
+				<p class="">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
+				</p>
+
+				<p class="">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. 
+				</p>
+
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="/img/articles/morbid/morbid.jpg">
+		</div>
+		
+	</section>
+
+	
+
+	<section class="article_section row_reverse container" mobile-flex="column">
+
+		<div class="copy">
+			<div class="inner">
+
+				<p class="cut_out">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. 
+				</p>
+
+				<div class="article_spacer small">
+					<img src="/img/barbed-wire-border-trans-large.png">
+				</div>
+
+				<p class="cut_out">
+					Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
+				</p>
+
+			</div>
+		</div>
+
+		<div class="image">
+			<img src="/img/articles/morbid/dead-1.jpg">
+		</div>
+		
+	</section>
+
+	
+</article>
