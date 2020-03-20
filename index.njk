@@ -14,9 +14,9 @@ eleventyNavigation:
 					<h1>The <span>Past</span> is <span>Alive</span></h1>
 				</div>
 				<div class="caption">
-					<p>Necro Cult is an effort to recreate the look and feel of 80s and 90s underground metal zines, in the tradition, and in tribute of Slayer Mag, Helvete, and countless other fanzines created throughout the decades.  We aim not just to showcase the art, culture, and news of the metal underground, but to have the reader’s experience be a work of art as well.  </p>
-					
-					<p>Brothers of Steel!  Death to False Metal!</p>
+					<p class="cut_out">Necro Cult is an effort to recreate the look and feel of 80s and 90s underground metal zines, in the tradition, and in tribute of Slayer Mag, Helvete, and countless other fanzines created throughout the decades.  We aim not just to showcase the art, culture, and news of the metal underground, but to have the reader’s experience be a work of art as well.  </p>
+					<br><br>
+					<p class="cut_out">Brothers of Steel!  Death to False Metal!</p>
 				</div>
 			</div>
 
@@ -50,7 +50,13 @@ eleventyNavigation:
 		{% set postslist = collections.posts.slice(0, 3) %}
 		{% include "postslist.njk" %}
 
-		<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+		<!--<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>-->
+		<div class="button_wrapper">
+			<a class="cta" href="{{ '/posts/' | url }}">
+				Enter the Archives
+			</a>
+		</div>
+		
 
 
 	</div>

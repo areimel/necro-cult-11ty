@@ -426,8 +426,33 @@ ELEMENTS
 
 ********************************************/
 
+  /********************************************
+    BUTTONS/CTAs
+  ********************************************/
+    .button_wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .cta{
+      background-color: var(--white);
+      color: var(--black);
+      font-size: 5.5rem;
+      font-family: var(--old-english);
+      text-decoration: none;
+      padding:15px 35px;
+      display: inline-block;
+      margin: 50px auto;
+      transition: var(--short-transition);
+    }
+    .cta:hover{
+      text-shadow: var(--text-glow-red);
+    }
 
-  /***** HERO *****/
+  /********************************************
+    HERO
+  ********************************************/
     .hero{
       background-size:cover;
       background-position:center;
@@ -436,9 +461,7 @@ ELEMENTS
 
 
   /********************************************
-
-  ARTICLE PREVIEW 
-
+    ARTICLE PREVIEW 
   ********************************************/
     .postlist{
       list-style: none;
@@ -588,7 +611,7 @@ ELEMENTS
         }
         .article_preview>.copy .snippet p{
           margin-bottom: 25px;
-          transform: rotate(-3deg);
+          transform: rotate(-2deg);
         }
 
         .article_preview>.copy .snippet .read_more{

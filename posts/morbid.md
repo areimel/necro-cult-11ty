@@ -21,10 +21,10 @@ layout: layouts/post.njk
 
 
 <article>
-	<!-- markup space -->
+	<!-- markdown space -->
 	<!-- HERO/TITLE -->
 	<section class="article_hero container" style="background-image: url('/img/articles/morbid/evil-dead-1.jpg');">
-		<!-- markup space -->
+		<!-- markdown space -->
 		<div class="copy">
 			<h1 class="title">
 				<span class="column_name">Tales From The Basement:</span>
@@ -32,67 +32,167 @@ layout: layouts/post.njk
 				<span class="main">Morbid</span>
 			</h1>
 		</div>
-		<!-- markup space -->
-		<!-- markup space -->
+		<!-- markdown space -->
+		<!-- markdown space -->
 		<span class="image_credit">
 			CREDIT: The Evil Dead, 1981
 		</span>
 	</section>
-	<!-- markup space -->
+	<!-- markdown space -->
 	<!-- INTRO -->
 	<div class="article_spacer">
 		<img src="/img/barbed-wire-border-trans-large.png">
 	</div>
-	<!-- markup space -->
+	<!-- markdown space -->
+	<section class="article_section full container small">
+		<div class="copy">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
+			</p>
+		</div>
+	</section>
+	<!-- markdown space -->
+	<div class="article_spacer">
+		<img src="/img/barbed-wire-border-trans-large.png">
+	</div>
+	<!-- markdown space -->
 	<!-- INTRO -->
 	<section class="article_section container" mobile-flex="column">
-		<!-- markup space -->
+		<!-- markdown space -->
 		<div class="copy">
 			<div class="inner">
-				<!-- markup space -->
+				<!-- markdown space -->
+				<h2 class="article_header">
+					<span>Year of the Goat</span>
+				</h2>
+				<!-- markdown space -->
 				<p class="">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
 				</p>
-				<!-- markup space -->
+				<!-- markdown space -->
 				<p class="">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. 
 				</p>
-				<!-- markup space -->
+				<!-- markdown space -->
 			</div>
 		</div>
-		<!-- markup space -->
+		<!-- markdown space -->
 		<div class="image">
 			<img src="/img/articles/morbid/morbid.jpg">
 		</div>
-		<!-- markup space -->
+		<!-- markdown space -->
 	</section>
-	<!-- markup space -->
-	<!-- markup space -->
-	<!-- markup space -->
+	<!-- markdown space -->
+	<!-- markdown space -->
+	<!-- markdown space -->
 	<section class="article_section row_reverse container" mobile-flex="column">
-		<!-- markup space -->
+		<!-- markdown space -->
 		<div class="copy">
 			<div class="inner">
-				<!-- markup space -->
+				<!-- markdown space -->
+				<h2 class="article_header">
+					<span>Dead</span>
+				</h2>
+				<!-- markdown space -->
 				<p class="cut_out">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. 
 				</p>
-				<!-- markup space -->
+				<!-- markdown space -->
 				<div class="article_spacer small">
 					<img src="/img/barbed-wire-border-trans-large.png">
 				</div>
-				<!-- markup space -->
+				<!-- markdown space -->
 				<p class="cut_out">
 					Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
 				</p>
-				<!-- markup space -->
+				<!-- markdown space -->
 			</div>
 		</div>
-		<!-- markup space -->
+		<!-- markdown space -->
 		<div class="image">
 			<img src="/img/articles/morbid/dead-1.jpg">
 		</div>
-		<!-- markup space -->
+		<!-- markdown space -->
 	</section>
-	<!-- markup space -->
+	<!-- markdown space -->
+	<!-- markdown space -->
+	<!-- markdown space -->
+	<section class="article_section container" mobile-flex="column">
+		<!-- markdown space -->
+		<div class="copy">
+			<div class="inner">
+				<!-- markdown space -->
+				<h2 class="article_header">
+					<span>Left Hand Path</span>
+				</h2>
+				<!-- markdown space -->
+				<p class="cut_out">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. 
+				</p>
+				<!-- markdown space -->
+				<div class="article_spacer small">
+					<img src="/img/barbed-wire-border-trans-large.png">
+				</div>
+				<!-- markdown space -->
+				<p class="cut_out">
+					Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
+				</p>
+				<!-- markdown space -->
+			</div>
+		</div>
+		<!-- markdown space -->
+		<div class="image">
+			<img src="/img/articles/morbid/entombed-1.jpg">
+		</div>
+		<!-- markdown space -->
+	</section>
+	<!-- markdown space -->
+	<div class="article_spacer small">
+		<img src="/img/barbed-wire-border-trans-large.png">
+	</div>
+	<!-- markdown space -->
+	<!-- markdown space -->
+	<section class="article_section full container small">
+		<div class="image">
+			<img src="/img/articles/morbid/black-emperors.jpg">
+		</div>
+	</section>
+	<!-- markdown space -->
+	<!-- markdown space -->
+	<section class="article_section full container small">
+		<div class="copy">
+			<h2 class="article_header">
+				<span>A Tribute To The Black Emperors</span>
+			</h2>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
+			</p>
+		</div>
+	</section>
+	<!-- markdown space -->
+	<!-- markdown space -->
+		<div class="article_spacer small">
+			<img src="/img/barbed-wire-border-trans-large.png">
+		</div>
+		<!-- markdown space -->
+		<!-- markdown space -->
+		<section class="article_section full container small">
+			<div class="image">
+				<img src="/img/articles/morbid/morbit.jpg">
+			</div>
+		</section>
+		<!-- markdown space -->
+		<!-- markdown space -->
+		<section class="article_section full container small">
+			<!-- markdown space -->
+			<div class="copy">
+				<h2 class="article_header">
+					<span>Metalion: 50 Years Of Fucking Off Life</span>
+				</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
+				</p>
+			</div>
+		</section>
+		<!-- markdown space -->
 </article>

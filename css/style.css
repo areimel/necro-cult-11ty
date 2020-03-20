@@ -37,10 +37,11 @@ PAGES
       }
       
       .home_1>.container>.main .caption{
-        font-size: 2.4rem;
+        font-size: 1.8rem;
+        line-height: 1.4em;
         font-family: var(--mono);
         width: 100%;
-        max-width: 950px;
+        max-width: 750px;
       }
       
 
@@ -349,6 +350,20 @@ ARTICLES - GENERAL
       flex-direction: column;
     }
 
+    /***** Heading *****/
+      .article_section .article_header{
+        background-color: var(--white);
+        color: var(--black);
+        padding: 25px;
+        transform: rotate(2deg);
+        text-align: center;
+        margin-bottom: 35px;
+      }
+      .article_section .article_header>span{
+        transform: rotate(-1deg);
+        display: inline-block;
+      }
+
     /***** Copy *****/
       .article_section .copy{
         font-size: 1.8rem; 
@@ -392,7 +407,21 @@ ARTICLES - GENERAL
             padding-left: 50px;
             padding-right: 0px;
           }
-
+        /***** Full *****/
+          .article_section.full{
+            justify-content: center;
+            align-items: center;
+          }
+          .article_section.full .copy{
+            width: 100%;
+            padding: 0px;
+            padding-left: 0px;
+            padding-right: 0px;
+          }
+          .article_section.full .copy>.inner{
+            width: 100%;
+            
+          }
 
   /*******************/
   /***** Spacers *****/
