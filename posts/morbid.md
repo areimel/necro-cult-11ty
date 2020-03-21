@@ -99,7 +99,7 @@ layout: layouts/post.njk
 				</p>
 				<!-- markdown space -->
 				<div class="article_spacer small">
-					<img src="/img/barbed-wire-border-trans-large.png">
+					<img src="/img/border-theban-2.png">
 				</div>
 				<!-- markdown space -->
 				<p class="cut_out">
@@ -131,7 +131,7 @@ layout: layouts/post.njk
 				</p>
 				<!-- markdown space -->
 				<div class="article_spacer small">
-					<img src="/img/barbed-wire-border-trans-large.png">
+					<img src="/img/border-theban-3.png">
 				</div>
 				<!-- markdown space -->
 				<p class="cut_out">
