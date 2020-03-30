@@ -5,7 +5,7 @@ date: 2019-06-24 20:19:31
 
 headline: Tales From the Basement - Morbid
 
-image: '/img/morbid.jpg'
+image: '/img/articles/morbid/morbid.jpg'
 
 album_credit: Morbid - Year of The Goat
 

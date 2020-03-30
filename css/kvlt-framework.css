@@ -126,6 +126,28 @@ GENERAL
       }
 
 
+/********************************************
+
+BUTTONS
+
+********************************************/
+  .button_1{
+    border:solid 2px var(--white);
+    color: var(--white);
+    background-color: transparent;
+    font-family: var(--old-english);
+    font-size: 5rem;
+    padding:5px 15px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: var(--short-transition);
+  }
+  .button_1:hover{
+    color: var(--black);
+    background-color: var(--white);
+  }
 
 /********************************************
 

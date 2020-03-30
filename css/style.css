@@ -21,7 +21,7 @@ PAGES
       .home_1>.container{
         
         display: flex;
-        border-bottom: solid 1px var(--white);
+        border-bottom: solid 2px var(--white);
       }
 
       .home_1>.container>.main{
@@ -362,6 +362,8 @@ ARTICLES - GENERAL
       .article_section .article_header>span{
         transform: rotate(-1deg);
         display: inline-block;
+        font-size: 5.5rem;
+        line-height: 1em;
       }
 
     /***** Copy *****/
@@ -437,4 +439,67 @@ ARTICLES - GENERAL
       
       margin: 15px auto;
       
+    }
+
+
+
+/********************************************
+
+GRID TEMPLATES
+
+********************************************/
+    .grid_template_1 {
+      display: grid;
+      width: 100%;
+      --grid-main-width: 1200px;
+      grid-template-columns: calc((100% - var(--grid-main-width)) / 2) var(--grid-main-width) calc((100% - var(--grid-main-width)) / 2) ;
+      grid-template-rows: auto;
+      grid-template-areas:
+      "header header header"
+      "sidebar_left main sidebar_right"
+      "footer footer footer";
+      justify-content: center;
+      align-content: center;
+      margin: auto;
+    }
+    /***** Responsive layout *****/
+      @media screen and (max-width: 1450px){
+        .grid_template_1{
+          --grid-main-width: 800px;
+        }
+      }
+      @media screen and (max-width: 1000px){
+        .grid_template_1{
+          --grid-main-width: 600px;
+        }
+      }
+
+
+
+    .grid_template_1>.grid_cell {
+      
+      padding: 10px;
+    }
+    .grid_template_1>.grid_cell>.grid_cell_inner {
+      border: dashed 1px var(--white);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .grid_template_1 .cell_1 {
+      grid-area: header;
+    }
+    .grid_template_1 .cell_2 {
+      grid-area: sidebar_left;
+    }
+    .grid_template_1 .cell_3 {
+      grid-area: main;
+    }
+    .grid_template_1 .cell_4 {
+      grid-area: sidebar_right;
+    }
+    .grid_template_1 .cell_5 {
+      grid-area: footer;
     }
