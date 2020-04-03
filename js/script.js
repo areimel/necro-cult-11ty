@@ -181,18 +181,21 @@ $(document).ready(function(){
 
     //BOILERPLATE SCROLLMAGIC CODE - GENERAL ACTIVE
       $(document).ready(function(){
-        var basic_animations = new ScrollMagic.Controller();
-
-        $('.animate_in').each(function(){
-          
-          var id = '#' + $(this).attr('id');
-          console.log(id);
-          var scene = new ScrollMagic.Scene({triggerElement: id,triggerHook: 'onEnter', offset: 200})
-            .setClassToggle(id, "active") 
-            //.setTween(id, 0.5, {opacity: "green", x: 50}) // trigger a TweenMax.to tween
-            //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-            .addTo(basic_animations);
-        });
+        
+        if($('.animate_in').length){
+          var basic_animations = new ScrollMagic.Controller();
+          $('.animate_in').each(function(){
+            
+            var id = '#' + $(this).attr('id');
+            console.log(id);
+            var scene = new ScrollMagic.Scene({triggerElement: id,triggerHook: 'onEnter', offset: 100})
+              .setClassToggle(id, "active") 
+              //.setTween(id, 0.5, {opacity: "green", x: 50}) // trigger a TweenMax.to tween
+              //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+              .addTo(basic_animations);
+          });
+        }
+        
 
       });
 
@@ -233,6 +236,7 @@ $(document).ready(function(){
 /*************************************
         PAGES
 *************************************/
+
   /*************************************
           HOME
   *************************************/
