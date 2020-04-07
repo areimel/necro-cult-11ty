@@ -487,6 +487,7 @@ ELEMENTS
   ********************************************/
     .postlist{
       list-style: none;
+      padding: 0;
     }
     .article_preview {
       margin: 150px auto;
@@ -509,6 +510,9 @@ ELEMENTS
       background-repeat: no-repeat;
       background-position: center;
     }    
+    .article_preview_wrapper:first-of-type .article_preview{
+      margin-top: 0;
+    }
 
     .article_preview>div{
       box-sizing:border-box;
@@ -542,7 +546,7 @@ ELEMENTS
       
 
       
-      .article_preview>div.image{
+      .article_preview>.image{
         padding-right:15px;
       }
       
@@ -567,7 +571,7 @@ ELEMENTS
         box-sizing: border-box;
       }
       
-      .article_preview>div.copy{
+      .article_preview>.copy{
         padding-left:50px;
       }
 
@@ -662,14 +666,14 @@ ELEMENTS
         .article_preview.alt_1:after {
           transform: translateX(-50%) rotate(180deg);
         } 
-        .article_preview.alt_1>div.copy {
+        .article_preview.alt_1>.copy {
             padding-right: 50px;
             padding-left: 0;
         }
         .article_preview.alt_1>.copy.cut_paste .title{
           transform: rotate(-3deg);
         }
-        .article_preview.alt_1>div.copy.cut_paste .snippet{
+        .article_preview.alt_1>.copy.cut_paste .snippet{
           padding-right:35px;
         }
         
@@ -710,6 +714,17 @@ ELEMENTS
         text-decoration: none;
       }
 
+    /***** Animate in *****/
+      .article_preview.animate_in{
+        transform: translate3d(0,50px,0);
+        opacity: 0;
+        transition: var(--short-transition);
+        will-change: opacity, transform;
+      }
+      .article_preview.animate_in.active{
+        transform: translate3d(0,0px,0);
+        opacity: 1;
+      }
 
 /********************************************
 
@@ -737,6 +752,134 @@ TYPOGRAPHY
       -10px 0 0 var(--white)
     ;
   }
+
+
+/********************************************
+
+SLIDERS - GENERAL
+
+********************************************/
+
+  .swiper-container .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--white);
+    width: 10px;
+    height: 10px;
+    transition: 0.25s ease-in-out;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .swiper-container  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--red);
+    width: 15px;
+    height: 15px;
+  }
+
+
+
+
+/********************************************
+
+MODALS
+
+********************************************/
+
+  /***** Overlay *****/
+    .modal_overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      background-color: rgba(0,0,0,.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.5s ease-in-out;
+      will-change: opacity;
+
+      /*display: none;*/
+    }
+    .modal_overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+  /***** Standard *****/
+    .modal {
+      position: fixed;
+      visibility: hidden;
+      top: 20%;
+      left: 50%;
+      transform: translate3d(-50%, 50px, 0);
+      z-index: 1001;
+      background-color: var(--white);
+      color: var(--black);
+      padding: 35px;
+      width: 100%;
+      max-width: 500px;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.5s ease-in-out;
+      will-change: transform, opacity;
+
+      /*display: none;*/
+    }
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translate3d(-50%, 0px, 0);
+      transition-delay: 0.25s;
+    }
+    .modal >.modal_close.main {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -25px;
+      right: -25px;
+      font-size: 20px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      background-color: var(--white);
+      color: #000;
+      border: solid 3px var(--white);
+      cursor: pointer;
+      transition: 0.25s ease-in-out;
+    }
+    .modal >.modal_close.main:hover {
+      border: solid 3px #1a1a1a;
+    }
+
+    /***** Content *****/
+      .modal .headline{
+        font-family: var(--old-english);
+        font-size: 3.6rem;
+        font-weight: 600;
+        display: inline-block;
+        padding-right: 35px;
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: solid 3px;
+      }
+      .modal .body{
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+        font-family: var(--mono);
+      }
+      .modal .cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
 
 
 /********************************************

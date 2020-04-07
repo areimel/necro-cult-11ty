@@ -207,21 +207,8 @@ PAGES
       .home_2>.article_preview_feed .header h2 {
         font-size: 7.5rem;
         text-align: center;
+        margin-bottom: 50px;
       }
-
-      .home_2>.article_preview_feed>.article_preview{
-        
-      }
-      .home_2>.article_preview_feed>.article_preview:first-of-type{
-        margin-top: 0;
-      }
-      .home_2>.article_preview_feed>.article_preview:last-of-type{
-        /*margin-bottom: 0;*/
-      }
-      
-      /*.home_2>.article_preview_feed>.article_preview:nth-of-type(odd){
-        flex-direction:row-reverse;
-      }*/
 
       
         
@@ -243,7 +230,7 @@ PAGES
     }
     .home_2 .sidebar .sidebar_cell {
       display: block;
-      padding: 35px 15px;
+      padding: 35px 15px 0;
       box-sizing: border-box;
       position: relative;
     }

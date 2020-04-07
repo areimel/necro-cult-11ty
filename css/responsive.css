@@ -1,4 +1,8 @@
+/********************************************
+CONTENTS
 
+  
+********************************************/
 
 
 @media all and (max-width: 1000px) {
@@ -11,3 +15,55 @@
 	padding: 15px 15px;
   }
 }
+
+
+
+/********************************************
+
+HOME
+
+********************************************/
+
+/***** Hero *****/
+	@media all and (max-width: 1100px) {
+	  .home_1>.container{
+	  	flex-direction: column;
+	  	justify-content: center;
+	  	align-items: center;
+	  }
+	  .home_1>.container>.main{
+	  	width: 100%;
+	  	margin-bottom: 50px;
+	  }
+	}
+
+/***** Feed *****/
+	@media all and (max-width: 1100px) {
+	  .home_2>.article_preview_feed{
+	  	width: 100%;
+	  	padding-right: 0;
+	  }
+	  .home_2 .sidebar{
+	  	display: none;
+	  }
+
+	  .article_preview,
+	  .article_preview.alt_1{
+		flex-direction: column;
+	  }
+	  .article_preview>.image{
+	  	width: 100%;
+	  	max-width: 500px;
+	  	margin-bottom: 50px;
+	  	padding-right: 0px;
+	  	padding-left: 0px;
+	  }
+	  
+	  .article_preview>.copy,
+	  .article_preview.alt_1>.copy{
+	  	width: 100%;
+	  	padding-left: 0px;
+	  	padding-right: 0px;
+	  }
+
+	}

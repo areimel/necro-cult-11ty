@@ -15,7 +15,6 @@ $(document).ready(function(){
 		//OPEN
 			$('body').on('click','.modal_open',function(e) {
 				e.preventDefault();
-				console.log("modal open");
 				var modal_get = $(this).data('modal');
 				$('.modal_overlay').addClass('active');
 				$('.modal[data-modal="'+modal_get+'"]').addClass('active');
@@ -74,6 +73,7 @@ $(document).ready(function(){
 
 
 		//Global offsite link modal - affects all links on site
+		/*
 			$('body').on('click','a',function(e) {
 				if($(this).hasClass('offsite_send_cta')){
 					$('.modal_overlay').removeClass('active');
@@ -86,7 +86,7 @@ $(document).ready(function(){
 		        	var site = "http://framework.oxfordcommunications.com.php73-39.lan3-1.websitetestlink.com";
 		        	console.log(href);
 		        	if (href.indexOf("http") >= 0) {
-		        		if(href.indexOf(site) >= 0 /*|| href.indexOf("") >= 0*/){
+		        		if(href.indexOf(site) >= 0 ){
 		        			console.log('onsite link');
 		        		}else{
 		        			console.log('offsite link');
@@ -99,6 +99,7 @@ $(document).ready(function(){
 
 	        	
 	        });
+	    */
 
 
 		

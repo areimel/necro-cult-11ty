@@ -180,17 +180,29 @@ $(document).ready(function(){
 
 
     //BOILERPLATE SCROLLMAGIC CODE - GENERAL ACTIVE
+      /*********************************************
+        NOTES:
+          - Set an ID for each element
+      *********************************************/
       $(document).ready(function(){
         
         if($('.animate_in').length){
           var basic_animations = new ScrollMagic.Controller();
           $('.animate_in').each(function(){
             
-            var id = '#' + $(this).attr('id');
+            /* grab IDs */
+              var id = '#' + $(this).attr('id');
+
+            /* grab custom offset, or fallback */
+              if ($(this).attr('data-animate-offset') != "") {
+                var custom_offset = $(this).attr('data-animate-offset');
+              }else{
+                var custom_offset = 150;
+              }
+
             console.log(id);
-            var scene = new ScrollMagic.Scene({triggerElement: id,triggerHook: 'onEnter', offset: 100})
+            var scene = new ScrollMagic.Scene({triggerElement: id,triggerHook: 'onEnter', offset: custom_offset})
               .setClassToggle(id, "active") 
-              //.setTween(id, 0.5, {opacity: "green", x: 50}) // trigger a TweenMax.to tween
               //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
               .addTo(basic_animations);
           });
@@ -242,14 +254,16 @@ $(document).ready(function(){
   *************************************/
 
   
-  //SLIDER
+  //Hero Slider
     $(document).ready(function(){
+
+      var slider_selector = '[data-slider="featured_slider_1"]';
       
-      var home_hero_swiper = new Swiper('.home_hero_slider', {
+      var home_hero_swiper = new Swiper(slider_selector, {
           spaceBetween: 200,
           loop: true,
           pagination: {
-            el: '.home_hero_slider .swiper-pagination',
+            el: slider_selector + ' .swiper-pagination',
           },
           speed: 500,
           autoplay: {
@@ -260,5 +274,23 @@ $(document).ready(function(){
     });
 
 
+  //Sidebar Slider
+    $(document).ready(function(){
+
+      var slider_selector = '[data-slider="sidebar_slider_1"]';
+
+      var home_hero_swiper = new Swiper(slider_selector, {
+          spaceBetween: 35,
+          loop: true,
+          pagination: {
+            el: slider_selector + ' .swiper-pagination',
+          },
+          speed: 500,
+          autoplay: {
+              delay: 5000,
+            },
+      });
+    
+    });
   
 

@@ -130,6 +130,10 @@
     <footer></footer>
 
     <!-- Current page: {{ page.url | url }} -->
+
+    <!-- MODALS -->
+    <div class="modal_overlay"></div>
+    {% include "newsletter_modal.njk" ignore missing %}
     
 
   </body>
@@ -152,5 +156,6 @@
   <!-- Local Scripts -->
     <script src="{{ '/js/analytics.js' | url }}"></script>
     <script src="{{ '/js/script.js' | url }}"></script>
+    <script src="{{ '/js/kvlt-framework.js' | url }}"></script>
 
 </html>
