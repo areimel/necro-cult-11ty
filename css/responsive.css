@@ -28,6 +28,12 @@ GENERAL
 HEADER/FOOTER/NAV
 
 ********************************************/
+@media all and (max-width: 1000px) {
+  #header .secondary{
+  	display: none;
+  }
+}
+
 
 
 /********************************************
@@ -38,18 +44,22 @@ HOME
 
 /***** Hero *****/
 	@media all and (max-width: 1100px) {
-	  .home_1>.container{
-	  	flex-direction: column;
-	  	justify-content: center;
-	  	align-items: center;
-	  }
-	  .home_1>.container>.main{
-	  	width: 100%;
-	  	margin-bottom: 50px;
-	  }
-	   .home_1>.container>.secondary{
-	  	display: none;
-	  }
+		.home_1{
+			padding: 0px;
+			
+		}
+		.home_1>.container{
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.home_1>.container>.main{
+			width: 100%;
+			margin-bottom: 50px;
+		}
+		.home_1>.container>.secondary{
+			display: none;
+		}
 	}
 
 /***** Feed *****/

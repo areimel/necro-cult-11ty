@@ -233,6 +233,7 @@ PAGES
       padding: 35px 15px 0;
       box-sizing: border-box;
       position: relative;
+      text-align: center;
     }
     .home_2 .sidebar .sidebar_cell h3 {
       text-align: center;

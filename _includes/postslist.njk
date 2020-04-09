@@ -1,12 +1,12 @@
 <ul reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
   
   {% set alt = cycler("", "alt_1") %}
-  {% set seq = cycler("seq_1", "seq_2", "seq_3") %}
+  
 
-  {% for post in postslist | reverse %}
+  {% for post in postslist  %}
 
     <li class="article_preview_wrapper postlist-item">
-      <article id="animate_{{ seq.next() }}" class="article article_preview animate_in {{ alt.next() }}" data-animate-offset="200" itemscope itemprop="blogPost">
+      <article  class="article article_preview animate_in {{ alt.next() }}" data-animate-offset="100" itemscope itemprop="blogPost">
 
         <div class="image">
           <a href="{{ post.url | url }}#more">

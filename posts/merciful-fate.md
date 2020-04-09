@@ -13,7 +13,10 @@ categories:
 
 
 tags: 
-- featured
+- 80s
+- First Wave Black Metal
+- 
+
 ---
 
 

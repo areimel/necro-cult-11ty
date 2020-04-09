@@ -179,37 +179,39 @@ $(document).ready(function(){
       });
 
 
-    //BOILERPLATE SCROLLMAGIC CODE - GENERAL ACTIVE
-      /*********************************************
-        NOTES:
-          - Set an ID for each element
-      *********************************************/
-      $(document).ready(function(){
-        
-        if($('.animate_in').length){
-          var basic_animations = new ScrollMagic.Controller();
-          $('.animate_in').each(function(){
-            
-            /* grab IDs */
-              var id = '#' + $(this).attr('id');
+//BOILERPLATE SCROLLMAGIC CODE - GENERAL ACTIVE
+/*********************************************
+  NOTES:
+    - Set an ID for each element
+*********************************************/
+$(document).ready(function(){
+  var animate_counter = 0;
+  if($('.animate_in').length){
+    var basic_animations = new ScrollMagic.Controller();
+    $('.animate_in').each(function(){
+      
+      /* assign IDs */
+        animate_counter++;
+        $(this).attr('id','scrollmagic'+animate_counter );
+        var id = '#' + $(this).attr('id');
 
-            /* grab custom offset, or fallback */
-              if ($(this).attr('data-animate-offset') != "") {
-                var custom_offset = $(this).attr('data-animate-offset');
-              }else{
-                var custom_offset = 150;
-              }
-
-            console.log(id);
-            var scene = new ScrollMagic.Scene({triggerElement: id,triggerHook: 'onEnter', offset: custom_offset})
-              .setClassToggle(id, "active") 
-              //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
-              .addTo(basic_animations);
-          });
+      /* grab custom offset, or fallback */
+        if ($(this).attr('data-animate-offset') != "") {
+          var custom_offset = $(this).attr('data-animate-offset');
+        }else{
+          var custom_offset = 150;
         }
-        
 
-      });
+      console.log(id);
+      var scene = new ScrollMagic.Scene({triggerElement: id,triggerHook: 'onEnter', offset: custom_offset})
+        .setClassToggle(id, "active") 
+        //.addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+        .addTo(basic_animations);
+    });
+  }
+  
+
+});
 
   $(document).ready(function(){
 
@@ -267,8 +269,13 @@ $(document).ready(function(){
           },
           speed: 500,
           autoplay: {
-              delay: 5000,
-            },
+            delay: 5000,
+            disableOnInteraction: false,
+            speed: 1000, 
+          },
+          roundLengths: true,
+          preventClicks: false,
+          preventClicksPropagation: false,
       });
     
     });
@@ -287,8 +294,13 @@ $(document).ready(function(){
           },
           speed: 500,
           autoplay: {
-              delay: 5000,
-            },
+            delay: 5000,
+            disableOnInteraction: false,
+            speed: 1000, 
+          },
+          roundLengths: true,
+          preventClicks: false,
+          preventClicksPropagation: false,
       });
     
     });
