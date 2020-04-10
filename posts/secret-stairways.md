@@ -13,8 +13,7 @@ snippet: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis 
 
 tags: 
 - featured
-- demos
-- black metal
+- dungeon synth
 
 layout: layouts/post.njk
 ---
