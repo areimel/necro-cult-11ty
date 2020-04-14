@@ -443,11 +443,11 @@ ELEMENTS
       font-family: var(--old-english);
       text-align: center;
       text-decoration: none;
-      padding:15px 35px;
-      display: inline-block;
+      padding:10px 35px;
+      display: inline;
       margin: 50px auto;
       width: 100%;
-      max-width: 300px;
+      max-width: 500px;
       transition: var(--short-transition);
     }
     .cta:hover{
