@@ -747,13 +747,28 @@ TYPOGRAPHY
     font-family: var(--mono);
     display: inline;
     letter-spacing: 1px;
-    padding: 1px 0;
+    line-height: 1.45;
+    padding: 3px 0;
     box-shadow: 
       10px 0 0 var(--white), 
       -10px 0 0 var(--white)
     ;
     position: relative;
     left: 10px;
+  }
+
+  .cut_out_alt{
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--old-english);
+    display: inline-block;
+    transform: rotate(3deg);
+    font-size: 1.55em;
+    padding: 2px 2px;
+    margin: -6px 0 -3px;
+    line-height: 1;
+    position: relative;
+    top: 2px;
   }
 
 
