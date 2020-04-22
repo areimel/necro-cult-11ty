@@ -992,25 +992,28 @@ SPECIAL FX
 
 ********************************************/
   /***** PAPER TEXTURE OVERLAY *****/
-  /*  
-    #texture_filter:after {
-      content: "";
-      display: block;
+    .texture_paper_white{
+      position: relative;
+    }
+    .texture_paper_white:after {
+      content:'';
       position: absolute;
+      height: 100%;
+      width: 100%;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100000%;
-      z-index: 10000;
-      pointer-events: none;
-      mix-blend-mode: screen;
-      opacity: .35;
-      background-color: #1a1a1a;
-      background-image: url(http://www.transparenttextures.com/patterns/cardboard.png);
+      
+      z-index: 5;
+      background-color: #fafafa;
+      background-image: url('/img/textures/cardboard-white.png');
       background-repeat: repeat;
       background-position: center;
+      background-size: cover;
     }
-  */
+    .texture_paper_white>*{
+      z-index: 6;
+    }
+  
 
   /***** FILM GRAIN OVERLAY *****/  
 
