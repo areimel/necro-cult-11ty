@@ -994,25 +994,83 @@ SPECIAL FX
   /***** PAPER TEXTURE OVERLAY *****/
     .texture_paper_white{
       position: relative;
+      background-color: var(--white);
+      overflow: hidden;
     }
-    .texture_paper_white:after {
+    .texture_paper_black{
+      position: relative;
+      background-color: var(--black);
+      overflow: hidden;
+    }
+
+    [class*="texture_paper_"]:after {
       content:'';
       position: absolute;
       height: 100%;
       width: 100%;
       top: 0;
       left: 0;
-      
-      z-index: 5;
-      background-color: #fafafa;
-      background-image: url('/img/textures/cardboard-white.png');
+      opacity: .5;
+      pointer-events: none;
+      background-image: url('/img/textures/natural-paper.png');
       background-repeat: repeat;
-      background-position: center;
-      background-size: cover;
+      mix-blend-mode: difference;
+      background-size: 50%;
     }
-    .texture_paper_white>*{
-      z-index: 6;
+
+  /***** CARDBOARD TEXTURE OVERLAY *****/
+    .texture_cardboard_white{
+      position: relative;
+      background-color: var(--white);
+      overflow: hidden;
     }
+    .texture_cardboard_black{
+      position: relative;
+      background-color: var(--black);
+      overflow: hidden;
+    }
+
+    [class*="texture_cardboard_"]:after {
+      content:'';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      pointer-events: none;
+      background-image: url('/img/textures/cardboard.png');
+      background-repeat: repeat;
+      mix-blend-mode: difference;
+    }
+
+  /***** DUST TEXTURE OVERLAY *****/
+    .texture_dust_white{
+      position: relative;
+      background-color: var(--white);
+      overflow: hidden;
+    }
+    .texture_dust_black{
+      position: relative;
+      background-color: var(--black);
+      overflow: hidden;
+    }
+
+    [class*="texture_dust_"]:after {
+      content:'';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      opacity: .5;
+      pointer-events: none;
+      background-image: url('/img/textures/green-dust-and-scratches.png');
+      background-repeat: repeat;
+      mix-blend-mode: difference;
+      background-size: 100%;
+    }
+    
   
 
   /***** FILM GRAIN OVERLAY *****/  

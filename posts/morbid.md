@@ -3,6 +3,8 @@ title: Morbid
 
 date: 2019-06-24 20:19:31
 
+column: Tales From The Basement
+
 headline: Tales From the Basement - Morbid
 
 image: '/img/articles/morbid/morbid.jpg'
@@ -27,7 +29,7 @@ layout: layouts/post.njk
 		<!-- markdown space -->
 		<div class="copy">
 			<h1 class="title">
-				<span class="column_name">Tales From The Basement:</span>
+				<span class="column_name texture_paper_white">Tales From The Basement:</span>
 				<br>
 				<span class="main">Morbid</span>
 			</h1>

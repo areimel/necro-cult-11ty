@@ -1,8 +1,14 @@
 ---
 title: Mortuary_Drape
+
 date: 2019-06-24 20:20:44
-headline: Tales From The Basement - Mortuary Drape
+
+column: Tales From The Basement
+
+headline: Into The Catacomba with Mortuary Drape
+
 image: '/img/articles/mortuary-drape/drape.jpg'
+
 album_credit: Mortuary Drape - Necromantic Doom Returns
 
 snippet: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis sollicitudin felis, vel tristique justo iaculis at. Curabitur luctus, enim at suscipit volutpat, sapien nulla tincidunt tellus, auctor interdum ex quam et eros. 
