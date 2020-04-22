@@ -28,7 +28,12 @@ GENERAL
 
     @font-face {
       font-family: 'OldEnglish';
-      src: url('/fonts/OldeEnglish.ttf') format('truetype');
+      src: url('/css/fonts/OldeEnglish.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'typewriter';
+      src: url('/css/fonts/MyUnderwood.ttf') format('truetype');
     }
 
 
@@ -68,7 +73,7 @@ GENERAL
       padding:0;
       margin:0;
       box-sizing:border-box;
-      font-family: 'Spectral', serif;
+      font-family: 'typewriter', serif;
       background-color:var(--grey-3);
       color:var(--white);
       font-size:1.6rem;
