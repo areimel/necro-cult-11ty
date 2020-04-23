@@ -3,15 +3,15 @@ title: Morbid
 
 date: 2019-06-24 20:19:31
 
-column: Tales From The Basement
+column: "Tales From The Basement"
 
-headline: Tales From the Basement - Morbid
+headline: "Tales From the Basement: Morbid"
 
-image: '/img/articles/morbid/morbid.jpg'
+image: /img/articles/morbid/morbid.jpg
 
 album_credit: Morbid - Year of The Goat
 
-snippet: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis sollicitudin felis, vel tristique justo iaculis at. Curabitur luctus, enim at suscipit volutpat, sapien nulla tincidunt tellus, auctor interdum ex quam et eros.
+snippet: "It has only been a few hours since I've translated and spoke aloud the first of the demon resurrection passages from the Book of the Dead..."
 
 tags: 
 - featured

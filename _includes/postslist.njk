@@ -5,8 +5,8 @@
 
   {% for post in postslist  %}
 
-    <li class="article_preview_wrapper postlist-item">
-      <article  class="article article_preview animate_in {{ alt.next() }}" data-animate-offset="100" itemscope itemprop="blogPost">
+    <li class="postlist-item">
+      <article class="article article_preview animate_in {{ alt.next() }}" data-animate-offset="100" itemscope itemprop="blogPost">
 
         <div class="image">
           <a href="{{ post.url | url }}#more">
@@ -17,26 +17,23 @@
         
 
         <div class="copy cut_paste">
-
-          <div class="article-inner">
-
-
-            <div class="article-header title inner texture_paper_white">
+          <div class="inner">
+            
+            <div class="title texture_paper_white">
               <!--<%- partial('post/title', {class_name: 'article-title'}) %>-->
-              <a class="article-title" href="{{ post.url | url }}#more">{{ post.data.headline }}</a>
+              <p class="column texture_cardboard_black">{{ post.data.column}}</p>
+              <a class="title_main" href="{{ post.url | url }}#more">{{ post.data.headline }}</a>
             </div>
 
-
-            <div class=" snippet inner texture_paper_white" itemprop="articleBody">
+            <div class=" snippet texture_paper_white" itemprop="articleBody">
               <p>{{ post.data.snippet}}</p>
 
-              <a class="read_more" href="{{ post.url | url }}#more">
+              <a class="read_more texture_cardboard_black" href="{{ post.url | url }}#more">
                 Read More
               </a>
             </div>
 
           </div>
-
         </div>
 
       </article>

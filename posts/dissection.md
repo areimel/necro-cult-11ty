@@ -1,15 +1,17 @@
 ---
-title: Dissection
+title: 'Dissection'
 
 date: 2019-04-09 12:01:01
 
-headline: Tales From the Basement - Dissection
+column: "Tales From the Basement"
 
-image: '/img/dissection.jpg'
+headline: "Anti-Cosmic Metal of Death: Dissection"
 
-album_credit: Dissection - The Past is Alive comp
+image: /img/dissection.jpg
 
-snippet: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis sollicitudin felis, vel tristique justo iaculis at. Curabitur luctus, enim at suscipit volutpat, sapien nulla tincidunt tellus, auctor interdum ex quam et eros.
+album_credit: "Dissection - The Past is Alive comp"
+
+snippet: "test"
 
 tags: 
 - featured

@@ -3,13 +3,15 @@ title: Secret Stairways
 
 date: 2019-04-08 12:01:01
 
-headline: Swords & Synthesizers - Secret Stairways
+column: "Swords & Synthesizers"
 
-image: '/img/articles/secret-stairways/enchantment.jpg'
+headline: "What Lies Beyond The Door: Secret Stairways"
 
-album_credit: Secret Stairways - Enchantment of the Ring
+image: /img/articles/secret-stairways/enchantment.jpg
 
-snippet: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis sollicitudin felis, vel tristique justo iaculis at. Curabitur luctus, enim at suscipit volutpat, sapien nulla tincidunt tellus, auctor interdum ex quam et eros.
+album_credit: "Secret Stairways - Enchantment of the Ring"
+
+snippet: "test"
 
 tags: 
 - featured
