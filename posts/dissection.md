@@ -7,7 +7,7 @@ column: "Tales From the Basement"
 
 headline: "Anti-Cosmic Metal of Death: Dissection"
 
-image: /img/dissection.jpg
+image: /img/articles/dissection/demos.jpg
 
 album_credit: "Dissection - The Past is Alive comp"
 

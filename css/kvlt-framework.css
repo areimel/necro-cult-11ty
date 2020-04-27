@@ -18,6 +18,7 @@ NOTES
 /********************************************
 
 GENERAL 
+--search-general
 
 ********************************************/
 
@@ -114,6 +115,12 @@ GENERAL
     img{
       max-width:100%;
     }
+    
+    input[type="submit"]{
+      cursor: pointer;
+      border: none;
+      -webkit-appearance: none;
+    }
 
 
     /***** Mobile Flex Direction *****/
@@ -136,6 +143,7 @@ GENERAL
 /********************************************
 
 HEADER/FOOTER/NAV 
+--search-nav
 
 ********************************************/
 
@@ -304,15 +312,13 @@ HEADER/FOOTER/NAV
         5px 5px var(--red);
     }
     #nav>.main>span{
-      font-family: 'Source Code Pro', monospace;
       font-size: 1.6rem;
       font-weight: 600;
     }
 
-    #nav>.links>a{
-      font-family: 'Source Code Pro', monospace;
+    #nav>.links>a{ 
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: center;
       text-align: center;
       padding: 15px 35px;
@@ -320,6 +326,10 @@ HEADER/FOOTER/NAV
       color: var(--white);
       text-decoration: none;
       border-bottom: solid 1px #222;
+    }
+    
+    #nav>.links>a>span{
+      padding: 0 15px;
     }
 
     #nav>.links>a>i{
@@ -429,11 +439,13 @@ HEADER/FOOTER/NAV
 /********************************************
 
 ELEMENTS 
+--search-elements
 
 ********************************************/
 
   /********************************************
     BUTTONS/CTAs
+    --search-buttons
   ********************************************/
     .button_wrapper{
       width: 100%;
@@ -478,8 +490,27 @@ ELEMENTS
       background-color: var(--white);
     }
 
+    .button_2{
+      
+      color: var(--white);
+      background-color: transparent;
+      font-family: var(--old-english);
+      font-size: 3.5rem;
+      padding:5px 25px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      transition: var(--short-transition);
+      transform: rotate(4deg);
+    }
+    .button_2:hover{
+      color: var(--black);
+      background-color: var(--white);
+    }
+
   /********************************************
     HERO
+    --search-hero
   ********************************************/
     .hero{
       background-size:cover;
@@ -490,6 +521,7 @@ ELEMENTS
 
   /********************************************
     ARTICLE PREVIEW 
+    --search-article-preview
   ********************************************/
     .postlist{
       list-style: none;
@@ -771,6 +803,7 @@ ELEMENTS
 /********************************************
 
 TYPOGRAPHY
+--search-typography
 
 ********************************************/
 
@@ -816,6 +849,7 @@ TYPOGRAPHY
 /********************************************
 
 SLIDERS - GENERAL
+--search-sliders
 
 ********************************************/
 
@@ -844,6 +878,7 @@ SLIDERS - GENERAL
 /********************************************
 
 MODALS
+--search-modals
 
 ********************************************/
 
@@ -877,6 +912,9 @@ MODALS
       transform: translate3d(-50%, 50px, 0);
       z-index: 1001;
       background-color: var(--white);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
       color: var(--black);
       padding: 35px;
       width: 100%;
@@ -904,29 +942,41 @@ MODALS
       align-items: center;
       top: -25px;
       right: -25px;
-      font-size: 20px;
       border-radius: 100%;
       box-sizing: border-box;
-      background-color: var(--white);
+      background-color: var(--black);
       color: #000;
-      border: solid 3px var(--white);
+      border: solid 3px var(--black);
       cursor: pointer;
       transition: 0.25s ease-in-out;
     }
     .modal >.modal_close.main:hover {
-      border: solid 3px #1a1a1a;
+      border: solid 3px var(--white);
+    }
+    .modal >.modal_close.main img{
+      width: 100%;
     }
 
     /***** Content *****/
+      .modal .bg{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+      }
+
       .modal .headline{
         font-family: var(--old-english);
-        font-size: 3.6rem;
+        font-size: 5.5rem;
         font-weight: 600;
         display: inline-block;
-        padding-right: 35px;
-        padding-bottom: 15px;
         margin-bottom: 15px;
-        border-bottom: solid 3px;
       }
       .modal .body{
         font-size: 1.8rem;
@@ -939,11 +989,106 @@ MODALS
         align-items: center;
       }
 
+  
+
+
+/********************************************
+
+FORMS
+--search-forms
+
+********************************************/
+  
+  /***** Global *****/
+    input{
+      border: none;
+      background-color: var(--white);
+      color: var(--black);
+      font-size: 1.6rem;
+    }
+    input::placeholder{
+      border: none;
+      color: var(--black);
+      opacity: 1;
+    }
+    input[type="submit"]{
+      cursor: pointer;
+      border: none;
+      -webkit-appearance: none;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"]{
+      padding: 10px 25px;
+    }
+
+
+
+  /***** Newsletter Form *****/
+    .newsletter_form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+    .newsletter_form label{
+      display: inline-block;
+      padding: 10px 25px;
+      color: var(--white);
+      background-color: var(--black);
+      font-size: 1.6rem;
+      margin-bottom: 5px;
+      transform: rotate(-2deg);
+    }
+    
+    .newsletter_form input{
+      display: block;
+      font-size: 1.8rem;
+    }
+    .newsletter_form .form_cell{
+      padding: 10px;      
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    
+    .newsletter_form .form_cell.submit{
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+    .newsletter_form input[type="submit"]{
+      padding: 10px 25px;
+      color: var(--white);
+      font-size: 1.6rem;
+      transform: rotate(4deg);
+      margin-right: 15px;
+    }
+      
+    .modal[data-modal="newsletter_modal"] .social{
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .modal[data-modal="newsletter_modal"] .social a{
+      font-size: 2.4rem;
+      padding: 5px;
+      margin:0 5px;
+      color: var(--black);
+    }
 
 
 /********************************************
 
 EXTRAS 
+--search-extras
 
 ********************************************/
   
@@ -1025,6 +1170,7 @@ EXTRAS
 /********************************************
 
 SPECIAL FX 
+--search-fx
 
 ********************************************/
   /***** PAPER TEXTURE OVERLAY *****/
@@ -1050,7 +1196,7 @@ SPECIAL FX
       pointer-events: none;
       background-image: url('/img/textures/natural-paper.png');
       background-repeat: repeat;
-      mix-blend-mode: difference;
+      mix-blend-mode: lighten;
       background-size: 50%;
     }
 
@@ -1077,7 +1223,7 @@ SPECIAL FX
       pointer-events: none;
       background-image: url('/img/textures/cardboard.png');
       background-repeat: repeat;
-      mix-blend-mode: difference;
+      mix-blend-mode: lighten;
     }
 
   /***** DUST TEXTURE OVERLAY *****/
@@ -1103,7 +1249,7 @@ SPECIAL FX
       pointer-events: none;
       background-image: url('/img/textures/green-dust-and-scratches.png');
       background-repeat: repeat;
-      mix-blend-mode: difference;
+      mix-blend-mode: lighten;
       background-size: 100%;
     }
     

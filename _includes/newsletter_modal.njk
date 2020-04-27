@@ -1,13 +1,38 @@
-<div class="modal" data-modal="newsletter_modal">
+<div class="modal" data-modal="newsletter_modal" >
+
+	<div class="bg " style="background-image: url('/img/newsletter-modal-dead.jpg'); opacity: .5; filter: grayscale(1);"></div>
+
 	<div class="modal_close main">
-		<i class="fas fa-times"></i>
+		<img src="/img/icons/x-1.png">
 	</div>
 	
 	<div class="copy">
 		<p class="headline">Newsletter</p>
-		<p class="body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius iaculis mauris, in lacinia purus congue porta. Nulla a semper mi, ac vehicula elit. Donec lacinia justo vitae libero viverra aliquet. Nam vitae semper ligula. Praesent volutpat purus et lectus elementum molestie.</p>
+		<p class="body">
+			Sign up for our weekly newsletter today and follow us on social media.
+		</p>
 	</div>
-	<div class="cta_wrapper">
-		<a class="button_1">Confirm</a>
-	</div>
+
+
+
+	<form class="newsletter_form" method="post" action="https://formspree.io/mqkyzkje">
+		<div class="form_cell">
+			<label id="sign_up_1">Email Address</label>
+			<input id="sign_up_1" type="email" name="Email">
+		</div>
+		<div class="form_cell submit">
+			
+			<input class="texture_paper_black" type="submit" name="Sign-Up" value="Sign Up">
+			
+			<div class="social">
+			  <a href="#" target="_blank">
+			  	<i class="fab fa-facebook-square"></i>
+			  </a>
+			  <a href="https://www.instagram.com/necrocultzine/" target="_blank">
+			  	<i class="fab fa-instagram"></i>
+			  </a>
+			</div>
+
+		</div>
+	</form>
 </div>
