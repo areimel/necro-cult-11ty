@@ -1,7 +1,7 @@
 ---
 title: 'Dissection'
 
-date: 2019-04-09 12:01:01
+date: 2020-01-04
 
 column: "Tales From the Basement"
 
