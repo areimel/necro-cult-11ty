@@ -26,7 +26,7 @@ PAGES
         }
 
         .home_1>.container>.main{
-          width: calc(100% - 400px);
+          width: calc(100% - 500px);
         }
         
         .home_1>.container>.main .title>h1{
@@ -50,7 +50,7 @@ PAGES
 
       /***** SLIDER *****/
         .home_1>.container>.home_hero_slider {
-          width: 400px;
+          width: 500px;
           overflow-x: hidden;
           overflow-y: hidden;
           position: relative;
@@ -130,8 +130,8 @@ PAGES
             color: var(--white);
             margin: 0;
             transform: rotate(2deg);
-            font-size: 3.5rem;
-            line-height: 3.2rem;
+            font-size: 4.5rem;
+            line-height: .8;
             display: inline-block;
             font-weight: 300;
             position: relative;
@@ -157,7 +157,7 @@ PAGES
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 15px 15px 75px 15px;
+            padding: 25px 25px 95px 25px;
             box-sizing: border-box;
             background-color: var(--white);
           }
