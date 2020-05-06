@@ -11,7 +11,7 @@ image: /img/articles/dissection/demos.jpg
 
 album_credit: "Dissection - The Past is Alive comp"
 
-snippet: "test"
+snippet: "While often included in top 10 lists for albums or bands, Dissection and Jon Nordveit’s influence on black metal and involvement in the violence and mythos of the 90s Scandanavian scene are often overlooked."
 
 tags: 
 - featured
@@ -69,7 +69,7 @@ layout: layouts/post.njk
 				</h2>
 				<!-- markdown space -->
 				<p class="">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Praesent tristique magna sit amet purus gravida quis blandit turpis. At ultrices mi tempus imperdiet nulla malesuada pellentesque elit. Aliquam etiam erat velit scelerisque in dictum non consectetur a. Lectus mauris ultrices eros in cursus. Quisque egestas diam in arcu cursus. At varius vel pharetra vel turpis nunc eget. Lectus sit amet est placerat. Magna eget est lorem ipsum dolor. Augue ut lectus arcu bibendum at varius vel.
+					While often included in top 10 lists for albums or bands, Dissection and Jon Nordveit’s influence on black metal and involvement in the violence and mythos of the 90s Scandanavian scene are often overlooked.  Surrounded by crime, murder, and suicide, while still having a profound impact on black metal, Dissection could give Mayhem a run for their money on who had the most dramatic story.
 				</p>
 				<!-- markdown space -->
 				<p class="">
