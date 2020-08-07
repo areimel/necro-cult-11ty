@@ -1,20 +1,19 @@
 ---
-title: Secret Stairways
+title: "Secret Stairways"
 
 date: 2019-04-08 12:01:01
 
 column: "Swords & Synthesizers"
 
-headline: "What Lies Beyond The Door: Secret Stairways"
+headline: "What Lies Beyond The Door: A look at Secret Stairways"
 
-image: /img/articles/secret-stairways/enchantment.jpg
+image: "/img/articles/secret-stairways/enchantment.jpg"
 
 album_credit: "Secret Stairways - Enchantment of the Ring"
 
 snippet: "test"
 
 tags: 
-- featured
 - dungeon synth
 
 layout: layouts/post.njk

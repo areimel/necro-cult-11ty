@@ -1,5 +1,5 @@
 ---
-title: 'Dissection'
+title: "Dissection"
 
 date: 2020-01-04
 
@@ -7,7 +7,7 @@ column: "Tales From the Basement"
 
 headline: "Anti-Cosmic Metal of Death: Dissection"
 
-image: /img/articles/dissection/demos.jpg
+image: "/img/articles/dissection/demos.jpg"
 
 album_credit: "Dissection - The Past is Alive comp"
 

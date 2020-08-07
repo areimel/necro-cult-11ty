@@ -1,5 +1,5 @@
 ---
-title: Morbid
+title: "Morbid"
 
 date: 2020-01-01
 
@@ -7,9 +7,9 @@ column: "Tales From The Basement"
 
 headline: "Tales From the Basement: Morbid"
 
-image: /img/articles/morbid/morbid.jpg
+image: "/img/articles/morbid/morbid.jpg"
 
-album_credit: Morbid - Year of The Goat
+album_credit: "Morbid - Year of The Goat"
 
 snippet: "It has only been a few hours since I've translated and spoke aloud the first of the demon resurrection passages from the Book of the Dead..."
 
