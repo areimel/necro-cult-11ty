@@ -11,7 +11,7 @@ image: "/img/articles/secret-stairways/enchantment.jpg"
 
 album_credit: "Secret Stairways - Enchantment of the Ring"
 
-snippet: "test"
+snippet: "A look into the beautiful, sad, and iconic Dungeon Synth tape, Enchantment of the Ring. "
 
 tags: 
 - dungeon synth
@@ -27,9 +27,9 @@ layout: layouts/post.njk
 		<!-- markdown space -->
 		<div class="copy">
 			<h1 class="title">
-				<span class="column_name">Tales From The Basement:</span>
+				<span class="column_name">Swords &amp; Synthesizers:</span>
 				<br>
-				<span class="main">Dissection</span>
+				<span class="main">The Story of Secret Stairways</span>
 			</h1>
 		</div>
 		<!-- markdown space -->
