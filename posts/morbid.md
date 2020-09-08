@@ -125,7 +125,7 @@ layout: layouts/post.njk
 			<div class="inner">
 				<!-- markdown space -->
 				<h2 class="article_header">
-					<span>Left Hand Path</span>
+					<span>Entombed</span>
 				</h2>
 				<!-- markdown space -->
 				<p class="cut_out">

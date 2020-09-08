@@ -24,119 +24,119 @@ GENERAL
 ********************************************/
 
 
-  /***** Fonts *****/
+	/***** Fonts *****/
 
-    @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Spectral|Germania+One');
+		@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Spectral|Germania+One');
 
-    @font-face {
-      font-family: 'OldEnglish';
-      src: url('/css/fonts/OldeEnglish.ttf') format('truetype');
-    }
+		@font-face {
+			font-family: 'OldEnglish';
+			src: url('/css/fonts/OldeEnglish.ttf') format('truetype');
+		}
 
-    @font-face {
-      font-family: 'typewriter';
-      src: url('/css/fonts/MyUnderwood.ttf') format('truetype');
-    }
+		@font-face {
+			font-family: 'typewriter';
+			src: url('/css/fonts/MyUnderwood.ttf') format('truetype');
+		}
 
 
   
-  /***** Box-Size Reset - global border-box *****/
-    
-    html {
-      box-sizing: border-box;
-    }
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
+	/***** Box-Size Reset - global border-box *****/
 
-  /***** Scrollbar styling *****/
-    ::-webkit-scrollbar {
-        width: 5px;
-    }
-     
-    ::-webkit-scrollbar-track {
-        -webkit-box-shadow: inset 0 0 20px var(--black); 
-        border-radius: 10px;
-    }
-     
-    ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 50px var(--grey-6); 
-    }
+		html {
+			box-sizing: border-box;
+		}
+		*, *:before, *:after {
+			box-sizing: inherit;
+		}
 
-    ::-webkit-scrollbar-thumb:hover {
-       -webkit-box-shadow: inset 0 0 50px var(--white);
-    }
+	/***** Scrollbar styling *****/
+		::-webkit-scrollbar {
+			width: 5px;
+		}
+
+		::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 20px var(--black); 
+			border-radius: 10px;
+		}
+
+		::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			-webkit-box-shadow: inset 0 0 50px var(--grey-6); 
+		}
+
+		::-webkit-scrollbar-thumb:hover {
+			-webkit-box-shadow: inset 0 0 50px var(--white);
+		}
   
 
-  /***** Global *****/
+	/***** Global *****/
 
-    html, body{
-      padding:0;
-      margin:0;
-      box-sizing:border-box;
-      font-family: 'typewriter', serif;
-      background-color:var(--grey-3);
-      color:var(--white);
-      font-size:1.6rem;
-      letter-spacing: 0.0625em;
-    }
+		html, body{
+			padding:0;
+			margin:0;
+			box-sizing:border-box;
+			font-family: 'typewriter', serif;
+			background-color:var(--grey-3);
+			color:var(--white);
+			font-size:1.6rem;
+			letter-spacing: 0.0625em;
+		}
 
-    html {
-      /*scroll-behavior: smooth;*/
-    }
+		html {
+			/*scroll-behavior: smooth;*/
+		}
 
-    body{
-      overflow-x:hidden;
-      height:100%;
+		body{
+			overflow-x:hidden;
+			height:100%;
+		}
 
-    }
+		::selection {
+			background: rgba(251,51,51,.85); /* WebKit/Blink Browsers */
+			mix-blend-mode: multiply;
+		}
+		::-moz-selection {
+			background: rgba(251,51,51,.85); /* Gecko Browsers */
+			mix-blend-mode: multiply;
+		}
 
-    ::selection {
-      background: rgba(251,51,51,.85); /* WebKit/Blink Browsers */
-      mix-blend-mode: multiply;
-    }
-    ::-moz-selection {
-      background: rgba(251,51,51,.85); /* Gecko Browsers */
-      mix-blend-mode: multiply;
-    }
-
-    .clearfix:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
+		.clearfix:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
 
 
-    a{
-      cursor: pointer;
-    }
 
-    img{
-      max-width:100%;
-    }
-    
-    input[type="submit"]{
-      cursor: pointer;
-      border: none;
-      -webkit-appearance: none;
-    }
+		a{
+			cursor: pointer;
+		}
+
+		img{
+			max-width:100%;
+
+		}
+
+		input[type="submit"]{
+			cursor: pointer;
+			border: none;
+			-webkit-appearance: none;
+		}
 
 
-    /***** Mobile Flex Direction *****/
+	/***** Mobile Flex Direction *****/
 
-      @media all and (max-width: 1000px) {
-        [mobile-flex]>*{
-          width: 100% !important;
-        }
-        [mobile-flex="column"]{
-          flex-direction: column !important;
-        }
-        [mobile-flex="column-reverse"]{
-          flex-direction: column-reverse !important;
-        }
-      }
+		@media all and (max-width: 1000px) {
+			[mobile-flex]>*{
+				width: 100% !important;
+			}
+			[mobile-flex="column"]{
+				flex-direction: column !important;
+			}
+			[mobile-flex="column-reverse"]{
+				flex-direction: column-reverse !important;
+			}
+		}
 
 
 
