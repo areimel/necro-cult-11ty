@@ -2,36 +2,35 @@
 <html lang="en">
   <head>
 
-    <!-- METAS -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ renderData.title or title or metadata.title }}</title>
-    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-    <link rel="shortcut icon" href="/img/favicon.png" />
+	<!-- METAS -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ renderData.title or title or metadata.title }}</title>
+		<meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+		<link rel="shortcut icon" href="/img/favicon.png" />
 
-    <!-- INTERNAL CSS -->
-    <link rel="stylesheet" href="{{ '/css/variables.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/boilerplate.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/kvlt-framework.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/responsive.css' | url }}">
+	<!-- INTERNAL CSS -->
+		<link rel="stylesheet" href="{{ '/css/variables.css' | url }}">
+		<link rel="stylesheet" href="{{ '/css/boilerplate.css' | url }}">
+		<link rel="stylesheet" href="{{ '/css/kvlt-framework.css' | url }}">
+		<link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+		<link rel="stylesheet" href="{{ '/css/responsive.css' | url }}">
 
-    <!-- EXTERNAL CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" integrity="sha256-pH1rXnKT93pKrqWn3yDTgwsQrK/M4sVMFL774/pfaas=" crossorigin="anonymous" />
+	<!-- EXTERNAL CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tooltipster/3.3.0/css/tooltipster.min.css" integrity="sha256-pH1rXnKT93pKrqWn3yDTgwsQrK/M4sVMFL774/pfaas=" crossorigin="anonymous" />
 
+	<!-- FONTS -->
+		<style type="text/css">
+			@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Spectral|Germania+One');
 
-    <style type="text/css">
-      @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro|Spectral|Germania+One');
-
-      @font-face {
-        font-family: 'OldEnglish';
-        src: url("{{ '/css/fonts/OldeEnglish.ttf' | url }}") format('truetype');
-
-      }
-    </style>
+			@font-face {
+				font-family: 'OldEnglish';
+				src: url("{{ '/css/fonts/OldeEnglish.ttf' | url }}") format('truetype');
+			}
+		</style>
 
 
   </head>

@@ -11,16 +11,16 @@ CONTENTS
 GENERAL
 
 ********************************************/
-@media all and (max-width: 1000px) {
-  .container{
-	padding: 15px 35px;
-  }
-}
-@media all and (max-width: 400px) {
-  .container{
-	padding: 15px 25px;
-  }
-}
+	@media all and (max-width: 1000px) {
+		.container{
+			padding: 15px 35px;
+		}
+	}
+	@media all and (max-width: 400px) {
+		.container{
+			padding: 15px 25px;
+		}
+	}
 
 
 /********************************************
@@ -28,11 +28,11 @@ GENERAL
 HEADER/FOOTER/NAV
 
 ********************************************/
-@media all and (max-width: 1000px) {
-  #header .secondary{
-  	display: none;
-  }
-}
+	@media all and (max-width: 1000px) {
+		#header .secondary{
+			display: none;
+		}
+	}
 
 
 
