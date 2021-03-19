@@ -1,0 +1,113 @@
+/********************************************
+
+MODALS
+--search-modals
+
+********************************************/
+
+  /***** Overlay *****/
+    .modal_overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      background-color: rgba(0,0,0,.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.5s ease-in-out;
+      will-change: opacity;
+
+      /*display: none;*/
+    }
+    .modal_overlay.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+  /***** Standard *****/
+    .modal {
+      position: fixed;
+      visibility: hidden;
+      top: 20%;
+      left: 50%;
+      transform: translate3d(-50%, 50px, 0);
+      z-index: 1001;
+      background-color: var(--white);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: var(--black);
+      padding: 35px;
+      width: 100%;
+      max-width: 500px;
+      opacity: 0;
+      pointer-events: none;
+      transition: 0.5s ease-in-out;
+      will-change: transform, opacity;
+
+      /*display: none;*/
+    }
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+      transform: translate3d(-50%, 0px, 0);
+      transition-delay: 0.25s;
+    }
+    .modal >.modal_close.main {
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -25px;
+      right: -25px;
+      border-radius: 100%;
+      box-sizing: border-box;
+      background-color: var(--black);
+      color: #000;
+      border: solid 3px var(--black);
+      cursor: pointer;
+      transition: 0.25s ease-in-out;
+    }
+    .modal >.modal_close.main:hover {
+      border: solid 3px var(--white);
+    }
+    .modal >.modal_close.main img{
+      width: 100%;
+    }
+
+    /***** Content *****/
+      .modal .bg{
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+      }
+
+      .modal .headline{
+        font-family: var(--old-english);
+        font-size: 5.5rem;
+        font-weight: 600;
+        display: inline-block;
+        margin-bottom: 15px;
+      }
+      .modal .body{
+        font-size: 1.8rem;
+        margin-bottom: 35px;
+        font-family: var(--mono);
+      }
+      .modal .cta{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }

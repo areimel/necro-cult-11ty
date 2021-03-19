@@ -1,0 +1,26 @@
+
+/********************************************
+
+SLIDERS - GENERAL
+--search-sliders
+
+********************************************/
+
+  .swiper-container .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    background-color: var(--white);
+    width: 10px;
+    height: 10px;
+    transition: 0.25s ease-in-out;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  .swiper-container  .swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--red);
+    width: 15px;
+    height: 15px;
+  }

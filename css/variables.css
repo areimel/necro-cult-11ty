@@ -33,13 +33,13 @@ FULL WIDTH
   
   font-size: 10px;
 
-  --black: #1a1a1a;
-  --white: #fdfdfd;
-  --red: #fb0000;
-  --grey-3: #333;
-  --grey-6: #666;
+  --black: 	#1a1a1a;
+  --white: 	#fdfdfd;
+  --red: 	#fb0000;
+  --grey-3: 	#333;
+  --grey-6: 	#666;
 
-  --old-english: 'OldEnglish', cursive;
+  --old-english: 'OldEnglish2', cursive;
   --germania: 'Germania One', cursive;
   --mono: 'typewriter', monospace;
   --serif: 'Spectral', serif;

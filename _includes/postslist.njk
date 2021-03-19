@@ -12,7 +12,7 @@
           <a href="{{ post.url | url }}#more">
             <img class="" src="{{ post.data.image | url }}" alt="{{ post.data.album_credit}}" />
           </a>
-          <span class="image_credit">{{ post.data.album_credit}}</span>
+          <span class="image_credit">{{ post.data.album_credit }}</span>
         </div>
         
 
@@ -21,12 +21,12 @@
             
             <div class="title texture_paper_white">
               <!--<%- partial('post/title', {class_name: 'article-title'}) %>-->
-              <p class="column texture_cardboard_black">{{ post.data.column}}</p>
+              <p class="column texture_cardboard_black">{{ post.data.column }}</p>
               <a class="title_main" href="{{ post.url | url }}#more">{{ post.data.headline }}</a>
             </div>
 
             <div class=" snippet texture_paper_white" itemprop="articleBody">
-              <p>{{ post.data.snippet}}</p>
+              <p>{{ post.data.snippet }}</p>
 
               <a class="read_more texture_cardboard_black" href="{{ post.url | url }}#more">
                 Read More

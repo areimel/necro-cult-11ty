@@ -37,6 +37,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("js");
+  eleventyConfig.addPassthroughCopy("ttf");
  
 
   /* Markdown Overrides */
@@ -77,7 +78,8 @@ module.exports = function(eleventyConfig) {
       "css",
       "jpg",
       "jpeg",
-      "png"
+      "png",
+      "ttf"
     ],
 
     // If your site lives in a different subdirectory, change this.

@@ -1,0 +1,14 @@
+/***** cut/paste *****/
+	.cut_paste .inner{
+		transform: rotate(2deg);
+		background-color: var(--white);
+		z-index: 10;
+		position: relative;
+	}
+	.cut_paste .inner *{
+		color: var(--black);
+		position: relative;
+		z-index: 15;
+		transform: rotate(-1deg);
+		text-decoration: none;
+	}
